@@ -53,7 +53,7 @@ pop the current item and go to the previous screen.
 an observable of the history stack.
 each item is `{location: <location>, element: <page>}`
 
-## navDiv.last
+## navDiv.location
 
 a observable of the very last item.
 
@@ -69,8 +69,6 @@ be emitted on that element.
 when another page is shown, the previously visible page
 will have `'blur'` emitted on that element, just before the
 other element is shown.
-
-
 
 ## License
 
