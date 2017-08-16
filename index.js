@@ -40,7 +40,7 @@ module.exports = function (router, header, first) {
   }
 
   root.history = history
-  root.last = last
+  root.location = last
 
   root.appendChild(
     header ? header(root) :
