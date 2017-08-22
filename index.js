@@ -30,11 +30,9 @@ module.exports = function (router, header, first) {
     if(history.getLength() > 1) {
       var el = history.pop().element
       el.dispatchEvent(new CustomEvent('blur', {target: el}))
-      console.log('last', last())
       var el2 = last().element
       el2.dispatchEvent(new CustomEvent('focus', {target: el}))
       var _container = container
-      console.log('replace', _container, el2)
       root.replaceChild(container = el2, _container)
     }
   }
